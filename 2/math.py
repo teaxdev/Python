@@ -1,4 +1,4 @@
-# Area of a rectangle practice
+# Area of a rectangle practice + some more
 
 length = 3
 width = 5
