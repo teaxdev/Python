@@ -17,7 +17,6 @@ while count > 0:
     else:
         print("Take it down, pass it around")
         print("No bottles of beer on the wall!")
-        break
 
 #    elif count == 0:
 #        bottle = "bottles"
