@@ -1,14 +1,12 @@
-# 3.3 logical operations homework.
+# 3.3 logical operations homework. complete 6 and, or, not statements
 
-# prompt = int(input("Enter an integer that will represent A: "))
-# prompt2 = int(input("Enter an integer that will represent B: "))
-
-prompt = 42
-prompt2 = 42
+prompt = int(input("Enter an integer that will represent A: "))
+prompt2 = int(input("Enter an integer that will represent B: "))
 
 prime_a = False
 prime_b = False
 
+# I tried to do the loop myself, got help from the internet in the end.
 for i in range(2, prompt):
     if prompt % i == 0:
         # print("A is not a prime number")
@@ -32,8 +30,8 @@ if prime_b == True and prime_a == True:
 else:
     print("Both are prime numbers: False")
 
-if prompt == 42 and prompt2 == 42:
-    print("Both numbers are equal to 42: True, universe is safe")
+if prompt == 42 and prompt2 == 42:  # :D
+    print("Both numbers are equal to 42: True. life, the universe and everything is safe")
 else:
     print("Both numbers are equal to 42: False")
 
