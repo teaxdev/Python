@@ -11,5 +11,5 @@ for i in range(len(days)):
 print(steps)
 steps_sum = sum(steps)
 print(f"Your total amount of steps: {steps_sum}")
-steps_average = steps_sum / len(days)
+steps_average = int(steps_sum / len(days))
 print(f"Your average amount of steps: {steps_average}")
