@@ -9,7 +9,9 @@ nato_alphabet = {"a": "Alpha", "b": "Bravo", "c": "Charlie", "d": "Delta", "e": 
 
 
 def main():
-    x == 1
+    inp = input("Please give me a word: ").lower()
+    for i in inp:
+        print(nato_alphabet[i])
 
 
 main()
