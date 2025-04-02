@@ -45,7 +45,7 @@ def to_ascii():
 def from_ascii():
 
     # Get and validate number between 32 and 127
-    ascii_input = input("Please enter an ASCII value: ")
+    ascii_input = int(input("Please enter an ASCII value: "))
     if ascii_input < 32 or ascii_input > 127:
         print("Please enter a valid ASCII character!")
         from_ascii()
