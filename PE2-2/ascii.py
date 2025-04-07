@@ -50,6 +50,10 @@ def from_ascii():
         print("Please enter a valid ASCII character!")
         from_ascii()
     # Try and except
+    try:
+        character = chr(ascii_input)
+    except ValueError:
+        print("Please enter a valid ASCII character! (32-127)")
 
     # convert frm ASCII and print
     character = chr(ascii_input)
