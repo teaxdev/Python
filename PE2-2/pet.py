@@ -13,40 +13,48 @@ class Pet:
 
     def get_owner_first_name(self):
         return self.__owner_first_name
-    
+
     def get_owner_last_name(self):
         return self.__owner_last_name
-        
+
     def get_pet_id(self):
         return self.__pet_id
-    
+
     def get_pet_name(self):
-       return self.__pet_name
-    
+        return self.__pet_name
+
     def get_pet_type(self):
-       return self.__pet_type
-    
+        return self.__pet_type
+
     def set_owner_first_name(self, value):
         self.__owner_first_name = value
-    
+
     def set_owner_last_name(self, value):
         self.__owner_last_name = value
-        
+
     def set_pet_id(self, value):
         self.__pet_id = value
-    
+
     def set_pet_name(self, value):
-       self.__pet_name = value
-    
+        self.__pet_name = value
+
     def set_pet_type(self, value):
-       self.__pet_type = value
+        self.__pet_type = value
 
     def display_pet_info(self):
-       print("Pet and owner details:", vars(self))
+        print("Pet and owner details:", vars(self))
 
-owner1 = Pet("James", "Smith", "12345", "Milo", "Dog")
-owner2 = Pet("Sam", "Mitchell", "12344", "Lana", "Cat")
-owner3 = Pet("Gavin", "Harders", "54321", "Covey", "Dog")
+    def check_property(obj, property_name):
+        print(f"Has a {property_name} method: ", hasattr(obj, property_name))
+
+
+def main():
+
+    owner1 = Pet("James", "Smith", "12345", "Milo", "Dog")
+    owner2 = Pet("Sam", "Mitchell", "12344", "Lana", "Cat")
+    owner3 = Pet("Gavin", "Harders", "54321", "Covey", "Dog")
+
+    check_property(owner1, "_Pet__owner_first_name")
+
 
 owner1.display_pet_info()
-print(hasattr(Pet, "_Pet__owner_first_name"))
